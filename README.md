@@ -11,7 +11,7 @@ Starting with a simple main menu, the user can **add/remove songs** (with and wi
 - Flexible searching
 - Multi-criteria sorting (title, artist, duration, playcount)
 - Custom LinkedList implementation with capacity limit (recently played queue)
-- Simple and clean CLI
+- Easily navigable and clean CLI
 - Fully object-oriented design using inheritance and polymorphism
 
 ---
