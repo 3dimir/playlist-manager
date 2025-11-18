@@ -23,16 +23,12 @@ public class PlaylistManager {
 			else {
 				while (true) { // Edge case where 'exit' may be a desired string
 					System.out.println("\n'EXIT' input detected");
-					System.out.println("Is 'EXIT' the title/artist/genre?\n");
-					System.out.print("1) Yes\n2) No\n>");
+					System.out.print("Is 'EXIT' the title/artist/genre? Y/N\n>");
 					String choice = input.nextLine().trim();
 					
-					int selection = 0;
-					
-					if (choice.matches("[12]")) selection = Integer.parseInt(choice);
-					if (selection == 2) return null; 
-					if (selection == 1) return userInput;
-					else System.out.println("\nERR: Please enter 1 or 2");
+					if (!choice.matches("[YNyn]")) System.out.println("\nERR: Please enter Y/N");
+					if (choice.equalsIgnoreCase("n")) return null; 
+					if (choice.equalsIgnoreCase("y")) return userInput;
 				}
 			}
 		}
