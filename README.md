@@ -48,11 +48,8 @@ Enter song's title
 >exit
 
 'EXIT' input detected
-Is 'EXIT' the title/artist/genre?
-
-1) Yes
-2) No
->1
+Is 'EXIT' the title/artist/genre? Y/N
+>Y
 
 Enter song's artist
 >Artist Name
